@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hospital User Dashboard</title>
+
+    <link rel="stylesheet" href="user-list.css">
+    <script src="user-list.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="hospital-logo">
+            <div>
+                <h2>🏥 Truecare Hospital</h2>
+                <p>Your Health Our Priority</p>
+            </div>
+        </div>
+
+        <h1>User Dashboard</h1>
+
+        <nav>
+            <a href="#appointments">My Appointments</a>
+        </nav>
+
+    </header>
+
+    <main id="dashboard">
+
+        <!-- MY APPOINTMENTS -->
+
+        <section class="appointment-section" id="appointments">
+
+            <div class="section-heading">
+                <h2>My Appointments List</h2>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <td>
+                        <tr>
+                            <th>Appointment ID</th>
+                            <th>Patient Name</th>
+                            <th>Doctor</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </td>
+
+                    <tbody id="appointmentList">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>♥ &nbsp; TrueCare Hospital
+        &nbsp; | &nbsp; User Panel © 2026</p>
+
+        <p class="footer-text">
+            Healthy People Happy Life
+        </p>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="appointment.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="Appointment.css">
+</head>
+<body>
+    <header class="form">
+        <h1>🗓️ Book Appointment</h1>
+        <p class="p">Schedule your appointment with our doctor's</p>
+         <hr>
+    <form action="user-list.html" onsubmit="alert('Your appointment booking successfully' )">
+             <div class="form-margin">
+            <div>
+                <label for="Full name">👤 Full Name:</label>
+                <input type="text">
+        </div>
+            </div>
+            <div class="form-margin">
+            <div>
+                <label for="Phone number">📞Contact Number:</label>
+                <input type="text">
+            </div>
+            </div>
+            <div class="form-margin">
+            <div>
+                <label for="E-mali Id">📧E-mail Adress:</label>
+                <input type="E-mail">
+                </div>
+            </div>
+            <div class="form-margin">
+            <div>
+                <label for="Select Doctor">🩺Select Doctor:</label>
+
+                <select name="select doctor" id="select doctor" required>
+                    <option value="">--select Doctor--</option>
+                    <option value="Dr.Husen Shaikh">Dr.Husen Shaikh</option>
+                    <option value="Dr.Muhammad Abu bakkar">Dr.Muhammad Abu bakkar</option>
+                    <option value="Dr.Muhammad Adi">Dr.Muhammad Adi</option>
+                    <option value="Dr.Fatema Khan">Dr.Fatema Khan</option>
+                    <option value="Dr.Ayesha Siddique">Dr.Ayesha Siddique</option>
+                    <option value="Dr.Tabassum Begam">Dr.Tabassum Begam</option>
+                    <option value="Dr.Hayat Qureshi">Dr.Hayat Qureshi</option>
+                </select>
+            </div>
+            </div>
+            <div class="form-margin">
+            <div>
+                <label for="date">🗓️Appointment Date:</label>
+                <input type="date" name="date" id="date">
+            </div>
+            </div>
+            <div class="form-margin">
+            <div>
+                <label for="Timing">🕐Timing solt:  </label>
+
+                <select name="Select Timing" id="Select Timing" required>
+                <option value="">select Time</option>
+                <option value="08:00 AM to 12:00 PM">8:00 AM to 12:00 PM</option>
+                <option value="01:00 PM to 04:00 PM">1:00 Pm to 4:00 PM</option>
+                <option value="05:00 PM to 08 PM">05:00 PM to 08 PM</option>
+                <option value="9:00 PM to 11:00 PM">9:00 PM to 11:00 PM</option>
+                </select>
+            </div>
+            </div>
+            <div class="form-margin">
+            <div>
+                <input type="radio" id="Male" name="Gender" value="Male">
+                <label for="Male">Male</label>
+
+                <input type="radio" id="Feamale" name="Gender" value="Female">
+                <label for="Female">Female</label>
+
+                <input type="radio" id="Other" name="Gender" Value="Other">
+                <label for="Other">Other</label>
+            </div>
+            <div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </header>
+    </form>
+</body>
+</html>

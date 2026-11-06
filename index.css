@@ -1,0 +1,234 @@
+body {
+              background-image: url('img/index.jpg');
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+               text-align: center;
+                margin: 0%;
+               padding: 0%;
+        }
+
+        header {
+            background-image: url(img/header.avif);
+            padding: 10px;
+            text-align: left;
+             border-radius: 20px;
+              margin: 10px;
+        }
+        button{
+            background-color:#d682e1 ;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: right;
+            margin-left: auto;
+            
+        }
+        
+        /* Navigation Main */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px auto;
+}
+
+/* Remove Big Box */
+
+nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    background: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
+/* Individual Navigation Boxes */
+
+nav div a {
+    background-color: #E4CCED;
+    color: #17365d;
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 2px solid #d682e1;
+
+    box-shadow: 0 3px 8px #ce476d;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+
+nav div a:hover {
+    background-color: #d682e1;
+    color: white;
+    transform: translateY(-3px);
+}
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 25px auto;
+        }
+        section{
+             background-color: #E4CCED;
+              margin: 20px;
+              padding: 20px;
+              border-radius: 8px;
+        }
+        
+        .btn{
+            background-color: #eeccf3;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px #ce476d;
+        }
+
+        .card h3 {
+            color: #17365d;
+        }
+        .department{
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px #ce476d;
+        }
+        
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        
+        .para{
+            text-align: right;
+        }
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+       
+   
+        /* Search Doctor */
+
+.search-doctor {
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.search-doctor h3 {
+    color: #17365d;
+}
+
+#searchDoctor {
+    width: 70%;
+    padding: 12px;
+    border: 2px solid #d682e1;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+#searchDoctor:focus {
+    border-color: #ce476d;
+}
+
+        footer {
+            background-color: #222;
+            color: white;
+            box-shadow: 0 -3px 10px rgba(0,0,0,0.15);
+            text-align: center;
+            padding: 15px;
+        }
+
+
+
+
+
+       /* All Images Responsive */
+       img {
+       max-width: 100%;
+      }
+     
+    /* Fix Home Layout */
+
+#home .home-content {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+
+#home .home-text {
+    flex: 1;
+    text-align: left;
+
+}
+
+#home .home-image {
+    flex: 1;
+    min-width: 0;
+    border-radius: 15px;
+}
+
+#home .home-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 15px;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    #home .home-content {
+        flex-direction: column !important;
+    }
+
+    #home .home-text,
+    #home .home-image {
+        width: 100%;
+    }
+}
+
+footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (min-width: 600px) {
+            .course-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (min-width: 900px) {
+            .course-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
